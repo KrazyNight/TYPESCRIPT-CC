@@ -114,5 +114,12 @@ interface StudentObject {
 
 function displayStudentInfo(student: StudentObject): void{
     const studentInfo: string = student.name + '\n' + student.age + '\n' + student.grade
+
+    document.body.innerHTML = studentInfo
 }
 
+displayStudentInfo({
+    name: 'John',
+    age: 15,
+    grade: Grade.sophomore
+})
