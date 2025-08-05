@@ -3,7 +3,9 @@ let age: number = 29;
 let course: string ="Typescript";
 let lessonCompleted: boolean = true;
 let x: any = false;
-
+let y: any = true;
+// any can be: number, string, boolean etc.
+      
 let courses: string[] = ["HTML", "CSS"];
 let arr: any[] = [true, '123', 321];
 let stringArr: string[][] = [['a'], ['b']];
@@ -84,7 +86,7 @@ function greet(): void {
     console.log("hello!");
 }
 
-
+  
 // Generics
 function getFirstElement<ArrType>(arr: ArrType[]) {
     return arr[0];
